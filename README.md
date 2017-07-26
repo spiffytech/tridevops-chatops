@@ -22,11 +22,18 @@ bin/hubot --alias '!'
 
 Hubot examples are in CoffeeScript, but we're not doing that
 
-# Hello, world!
+# Configuring your Slack bot
 
-https://github.com/hubotio/hubot/blob/master/docs/scripting.md
+- Tap your name in Slack
+- Tap "Apps & Integrations"
+- Tap "Manage" in the top-right
+- "Custom Integrations"
+- "Bots"
+- "Add Configuration"
+- Fill in the fields
+- Copy your bot token. This will identify your bot to Slack.
 
-Create an echo command for Rick & Morty
+hubot-slack documentation: https://slackapi.github.io/hubot-slack/
 
 # Commands for Google Container Engine
 `kubectl` cheatsheet: https://kubernetes.io/docs/user-guide/kubectl-cheatsheet/
@@ -40,6 +47,12 @@ Create an echo command for Rick & Morty
 - `kubectl set image deployment/tridevops-demo tridevops-demo=gcr.io/strong-phalanx-125218/tridevops-demo:0.99.2`
 - `kubectl get deployment/tridevops-demo -o=jsonpath='{$.spec.template.spec.containers[:1].image}'`
 - `kubectl get deployment tridevops-demo`
+
+# Hello, world!
+
+https://github.com/hubotio/hubot/blob/master/docs/scripting.md
+
+Create an echo command for Rick & Morty
 
 ## Steps
 
@@ -65,18 +78,5 @@ Create an echo command for Rick & Morty
 - Show off webhook
     https://github.com/hubotio/hubot/blob/master/docs/scripting.md#http-listener
 - Show non-triggered, hubot-initiated messages via `setInterval`
-
-# Configuring your Slack bot
-
-- Tap your name in Slack
-- Tap "Apps & Integrations"
-- Tap "Manage" in the top-right
-- "Custom Integrations"
-- "Bots"
-- "Add Configuration"
-- Fill in the fields
-- Copy your bot token. This will identify your bot to Slack.
-
-hubot-slack documentation: https://slackapi.github.io/hubot-slack/
 
 # Persisting data with Redis Brain
